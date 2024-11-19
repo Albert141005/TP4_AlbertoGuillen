@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tabla de Operaciones</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tabla de Operaciones</h1>
+        <button class="animated-button" onclick="goTo('index.html')">Inicio</button>
+        <button class="animated-button" onclick="goTo('pagina2.html')">Galería de Imágenes</button>
+        
+        <table class="operation-table">
+            <thead>
+                <tr>
+                    <th class="animated-header">OPERACIÓN</th>
+                    <th class="animated-header">DESCRIPCIÓN</th>
+                    <th class="animated-header">BOTONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Multiplicación</td>
+                    <td>Multiplica 2 números ingresados</td>
+                    <td><button class="calculate-button" onclick="performOperation('Multiplicación')">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>Exponente 2</td>
+                    <td>Eleva al cuadrado 1 número ingresado</td>
+                    <td><button class="calculate-button" onclick="performOperation('Exponente 2')">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>Resta</td>
+                    <td>Resta 2 números ingresados</td>
+                    <td><button class="calculate-button" onclick="performOperation('Resta')">Calcular</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Formulario para ingresar los números -->
+        <div id="input-container">
+            <h2>Ingrese los números:</h2>
+            <input type="number" id="num1" placeholder="Número 1" />
+            <input type="number" id="num2" placeholder="Número 2" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

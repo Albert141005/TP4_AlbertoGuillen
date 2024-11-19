@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Interactiva</title>
+    <style>
+        /* Estilos CSS como los que ya tenías */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        .img-hover:hover {
+            transform: scale(1.1);
+        }
+        .img-fade:hover {
+            opacity: 0.5;
+        }
+        .img-rotate:hover {
+            transform: rotate(15deg);
+        }
+        .img-slide:hover {
+            transform: translateY(-10px);
+        }
+        .img-shadow:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Bienvenido a la Galería Interactiva!</h1>
+
+    <script>
+        const edad = prompt("¿Cuántos años tienes?");
+        if (edad) {
+            if (edad > 20) {
+                alert("Eres mayor de 20 años.");
+            } else {
+                alert("Eres menor de 20 años.");
+            }
+        }
+    </script>
+
+    <div class="gallery">
+        <img class="img-hover" src="imagenes/universo1.avif" 
+             alt="imagenes" 
+             onmouseover="this.src='imagenes/paisaje1.jpg'" 
+             onmouseout="this.src='imagenes/paisaje1.jpg'">
+
+        <img class="img-fade" src="imagenes/universo2.webp" 
+             alt="Imagen 2" 
+             onmouseover="this.src='imagenes/paisaje2.jpg'" 
+             onmouseout="this.src='imagenes/paisaje2.jpg'">
+
+        <img class="img-rotate" src="imagenes/universo3.avif" 
+             alt="Imagen 3" 
+             onmouseover="this.src='imagenes/paisaje3.jpg'" 
+             onmouseout="this.src='imagenes/paisaje3.jpg'">
+
+        <img class="img-slide" src="imagenes/universo4.jpg" 
+             alt="Imagen 4" 
+             onmouseover="this.src='imagenes/paisaje4.jpg'" 
+             onmouseout="this.src='imagenes/paisaje4.jpg'">
+
+        <img class="img-shadow" src="imagenes/universo5.jpg" 
+             alt="Imagen 5" 
+             onmouseover="this.src='imagenes/paisaje5.jpg'" 
+             onmouseout="this.src='imagenes/paisaje5.jpg'">
+    </div>
+
+    <div class="button-container">
+        <button class="button" onclick="location.href='index.html'">index</button>
+        <button class="button" onclick="location.href='pagina3.html'">Página 3</button>
+    </div>
+</body>
+</html>
+
+
+

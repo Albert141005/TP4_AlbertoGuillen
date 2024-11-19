@@ -1,0 +1,96 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Tipografía moderna */
+    background-color: #eaeaea; /* Color de fondo más suave */
+    color: #333; /* Color del texto */
+}
+
+.container {
+    margin: 20px;
+    text-align: center;
+    background: #fff; /* Fondo blanco para las secciones */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1, h2 {
+    color: #2c3e50; /* Color oscuro para los encabezados */
+}
+
+.animated-button {
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 18px; /* Aumenta el tamaño de fuente */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; /* Color de fondo */
+    color: white; /* Color del texto */
+}
+
+.animated-button:hover {
+    background-color: #2980b9; /* Color al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.operation-table {
+    width: 85%; /* Ajusta el ancho de la tabla */
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+.operation-table th,
+.operation-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.operation-table th {
+    background-color: #007bff; /* Color del encabezado */
+    color: white; /* Color del texto del encabezado */
+    font-weight: bold;
+}
+
+.operation-table tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse sobre filas */
+}
+
+.calculate-button {
+    padding: 6px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* Color verde */
+    color: white;
+    transition: background-color 0.3s, transform 0.2s; /* Transición de color */
+}
+
+.calculate-button:hover {
+    background-color: #218838; /* Color al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.animated-header {
+    animation: fadeIn 1s; /* Animación para el encabezado */
+}
+
+/* Añade la animación de fundido */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Iniciar invisible */
+    }
+    to {
+        opacity: 1; /* Terminar visible */
+    }
+}
+
+/* Adición de estilo para la galería */
+.gallery img {
+    border-radius: 10px; /* Esquinas redondeadas de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para las imágenes */
+}
+
+
